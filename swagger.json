@@ -1,0 +1,86 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "version": "1.0.0",
+    "title": "Product API",
+    "description": "Product API for [Kuehne+Nagel]",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    },
+    "contact":{
+      "name": "Amali Osadi",
+      "email": "kaosadi17@gmail.com"
+    }
+  },
+  "host": "localhost:5000",
+  "basePath": "/",
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/products": {
+      "get": {
+        "summary": "List all products quantity group by year",
+        "operationId": "listProducts",
+        "tags": ["products"],
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "description": "From Date (YYYY-MM-DD) ",
+            "required": false,
+            "minLength": 1,
+            "format": "int32"
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "description": "To Date (YYYY-MM-DD)",
+            "required": false,
+            "minLength": 1,
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/Products"
+            }
+          }
+        }
+      }
+    }
+  },
+  "components":{
+  "schemas": {
+    "Products": {
+      "properties": {
+        "success": {
+          "type": "boolean",
+          "example": true
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/components/schemas/Product"
+          }
+        }
+      }
+    },
+    "Product": {
+      "properties": {
+        "year": {
+          "type": "string",
+          "example": "2022"
+        },
+        "quantity": {
+          "type": "integer",
+          "example": 10
+        }
+      }
+    }
+  }
+}
+}

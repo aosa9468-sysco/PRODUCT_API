@@ -1,19 +1,26 @@
 {
-  "name": "Product_API",
+  "name": "product_api",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "type": "module",
-  "scripts": {
-    "start": "NODE_ENV=dev nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_ENV=dev nodemon --experimental-json-modules server.js",
+    "test":  "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
   "dependencies": {
+    "@babel/preset-env": "^7.18.6",
     "express": "^4.18.1",
-    "lodash": "^4.17.21"
+    "fs": "^0.0.1-security",
+    "jest": "^28.1.2",
+    "lodash": "^4.17.21",
+    "start": "^5.1.0",
+    "swagger-ui-express": "^4.4.0",
+    "ts-node": "^10.8.2",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
