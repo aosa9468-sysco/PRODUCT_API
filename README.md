@@ -28,7 +28,7 @@ you can run unit tests using the below command
 
 ## Swagger Documentation
 
-After you successfully run the project you can see the Sragger document.
+After you successfully run the project you can see the Swagger document.
 
 Swagger URL : http://localhost:5000/api-docs
 
