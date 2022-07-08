@@ -26,34 +26,34 @@ export const productData = [
 ];
 
 export const mockDateFilteredData = [
-    {
-        id: 2,
-        code: "025",
-        name: "McVities test Family Circle",
-        date: "2022-01-10",
-        price: "1.36",
-        qty: "6",
-      }
+  {
+    id: 2,
+    code: "025",
+    name: "McVities test Family Circle",
+    date: "2022-01-10",
+    price: "1.36",
+    qty: "6",
+  },
 ];
 
 export const mockGroupedData = [
   {
     quantity: 2,
-    year: "2021"
+    year: "2021",
   },
   {
     quantity: 1,
-    year: "2022"
-  }
-]
+    year: "2022",
+  },
+];
 
 export const mockFilteredData = [
   {
     id: 15,
-    code: '025',
-    name: 'Davids Cookies test Gourmet Cookies Butter',
-    date: '2022-01-06',
-    price: '2.00',
-    qty: '32'
-  }
-]
+    code: "025",
+    name: "Davids Cookies test Gourmet Cookies Butter",
+    date: "2022-01-06",
+    price: "2.00",
+    qty: "32",
+  },
+];

@@ -1,7 +1,7 @@
 import express from "express";
 import productRoutes from "./src/api/product/index.js";
 import swaggerUi from "swagger-ui-express";
-import swaggerDocument from "./swagger.json" assert {type: "json"};
+import swaggerDocument from "./swagger.json" assert { type: "json" };
 
 const PORT = process.env.NODE_PORT || 5000;
 const app = express();

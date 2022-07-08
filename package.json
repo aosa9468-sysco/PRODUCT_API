@@ -5,11 +5,11 @@
   "main": "server.js",
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "NODE_ENV=dev nodemon --experimental-json-modules server.js",
-    "test":  "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "dependencies": {
     "@babel/preset-env": "^7.18.6",

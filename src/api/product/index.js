@@ -26,9 +26,7 @@ router.get("/", (req, res) => {
         .status(StatusCodes.OK)
         .json({ success: true, data: prodctQuantityData });
     } else {
-      res
-        .status(StatusCodes.NO_CONTENT)
-        .json({ success: true, data: [] });
+      res.status(StatusCodes.NO_CONTENT).json({ success: true, data: [] });
     }
   } catch (error) {
     res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({

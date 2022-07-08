@@ -1,4 +1,8 @@
-import { getDateFilteredProductData, getfilteredProductData, getIdCountGroupByYear } from "../product-util.js";
+import {
+  getDateFilteredProductData,
+  getfilteredProductData,
+  getIdCountGroupByYear,
+} from "../product-util.js";
 import {
   mockDateFilteredData,
   mockGroupedData,
@@ -16,15 +20,11 @@ describe("product-util - unit tests", () => {
     });
 
     it("should return the product data according to given filters", () => {
-        expect(getfilteredProductData(productData)).toEqual(
-          mockDateFilteredData
-        );
-      });
+      expect(getfilteredProductData(productData)).toEqual(mockDateFilteredData);
+    });
 
-      it("should return the product data quantity group by year", () => {
-        expect(getIdCountGroupByYear(productData)).toEqual(
-          mockGroupedData
-        );
-      });
+    it("should return the product data quantity group by year", () => {
+      expect(getIdCountGroupByYear(productData)).toEqual(mockGroupedData);
+    });
   });
 });

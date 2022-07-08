@@ -27,4 +27,4 @@ export const getFilteredProductData = (from, to) => {
 
 export const getProductQuantityGroupByYear = (filteredProductData) => {
   return getIdCountGroupByYear(filteredProductData);
-}
+};

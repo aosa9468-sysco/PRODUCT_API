@@ -3,12 +3,12 @@
   "info": {
     "version": "1.0.0",
     "title": "Product API",
-    "description": "Product API for [Kuehne+Nagel]",
+    "description": "Product API for [Kuehne+Nagel] Tech Task",
     "license": {
       "name": "MIT",
       "url": "https://opensource.org/licenses/MIT"
     },
-    "contact":{
+    "contact": {
       "name": "Amali Osadi",
       "email": "kaosadi17@gmail.com"
     }
@@ -53,34 +53,34 @@
       }
     }
   },
-  "components":{
-  "schemas": {
-    "Products": {
-      "properties": {
-        "success": {
-          "type": "boolean",
-          "example": true
-        },
-        "data": {
-          "type": "array",
-          "items": {
-            "$ref": "#/components/schemas/Product"
+  "components": {
+    "schemas": {
+      "Products": {
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "example": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Product"
+            }
           }
         }
-      }
-    },
-    "Product": {
-      "properties": {
-        "year": {
-          "type": "string",
-          "example": "2022"
-        },
-        "quantity": {
-          "type": "integer",
-          "example": 10
+      },
+      "Product": {
+        "properties": {
+          "year": {
+            "type": "string",
+            "example": "2022"
+          },
+          "quantity": {
+            "type": "integer",
+            "example": 10
+          }
         }
       }
     }
   }
-}
 }
